@@ -8,17 +8,25 @@ function Navigation() {
         <>
             <Navbar bg="light" variant="light">
                 <Container>
-                    <Nav className="me-auto">
-                        <Nav.Link href="#buy">Buy</Nav.Link>
-                        <Nav.Link href="#rent">Rent</Nav.Link>
-                        <Nav.Link href="#sell">Sell</Nav.Link>
-                        <Nav.Link href="#homeLoans">Home Loans</Nav.Link>
-                        <Nav.Link href="#agentFinder">Agent</Nav.Link>
-                        <Navbar.Brand href="#home">Zillow</Navbar.Brand>
-                        <Nav.Link href="#manageRentals">Manage Rentals</Nav.Link>
-                        <Nav.Link href="#advertise">Advertise</Nav.Link>
-                        <Nav.Link href="#help">Help</Nav.Link>
-                        <Nav.Link href="#signIn">Sign In</Nav.Link>
+                    <Nav className="me-auto nav-container">
+                        <div className="left-nav">
+                            <Nav.Link href="#buy">Buy</Nav.Link>
+                            <Nav.Link href="#rent">Rent</Nav.Link>
+                            <Nav.Link href="#sell">Sell</Nav.Link>
+                            <Nav.Link href="#homeLoans">Home Loans</Nav.Link>
+                            <Nav.Link href="#agentFinder">Agent</Nav.Link>
+                        </div>
+                        <div className="mid-nav">
+                            <Navbar.Brand href="#home">
+                                <img className="zillow-logo" src="./zillow.png" />
+                            </Navbar.Brand>
+                        </div>
+                        <div className="right-nav">
+                            <Nav.Link href="#manageRentals">Manage Rentals</Nav.Link>
+                            <Nav.Link href="#advertise">Advertise</Nav.Link>
+                            <Nav.Link href="#help">Help</Nav.Link>
+                            <Nav.Link href="#signIn">Sign In</Nav.Link>
+                        </div>
                     </Nav>
                 </Container>
             </Navbar>

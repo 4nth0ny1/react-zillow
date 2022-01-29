@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar-nav {
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left-nav, 
+.mid-nav, 
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
