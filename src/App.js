@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar.jsx';
+import Navigation from './components/Navigation.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navigation />
       <h1>React Zillow</h1>
     </div>
   );
