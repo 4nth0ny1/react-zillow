@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <h1>React Zillow</h1>
     </div>
   );
 }

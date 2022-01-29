@@ -8,63 +8,25 @@ function Navigation() {
 
     return(
         <>
-            <Navbar bg="light" variant="light">
-                <Container>
-                    <Nav className="me-auto nav-container">
-                        <div className="left-nav">
-                            <Nav.Link href="#buy">
-                                <NavDropdown className="nav-dropdown" title="Buy" id="collasible-nav-dropdown">
-                                    <div className="dropdown-section">
-                                        <Navbar.Text className="dropdown-text">Homes for sale</Navbar.Text>
-                                        <div className="inner-section-container">
-                                            <div className="inner-section">
-                                                <NavDropdown.Item href="#action/3.1">Homes for sale</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2">Foreclosures</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">For sale by owner</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.4">Open houses</NavDropdown.Item>
-                                            </div>
-                                            <div className="inner-section">
-                                                <NavDropdown.Item href="#action/3.1">New Construction</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2">Coming Soon</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3">Recent home sales</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.4">All homes</NavDropdown.Item>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="dropdown-section">
-                                        <Navbar.Text className="dropdown-text">Bundle buying and selling</Navbar.Text>
-                                        <NavDropdown.Item href="#action/3.1">Buy and sell with Zillow 360</NavDropdown.Item>
-                                    </div>
-                                    <div className="dropdown-section">
-                                        <Navbar.Text className="dropdown-text">Resources</Navbar.Text>
-
-                                        <NavDropdown.Item href="#action/3.1">Buyer's Guide</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Foreclosure Center</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Real estate app</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.4">Find a buyer's agent</NavDropdown.Item>
-                                    </div>
-                                </NavDropdown>
-                            </Nav.Link>
-
-                            <Nav.Link href="#rent">Rent</Nav.Link>
-                            <Nav.Link href="#sell">Sell</Nav.Link>
-                            <Nav.Link href="#homeLoans">Home Loans</Nav.Link>
-                            <Nav.Link href="#agentFinder">Agent</Nav.Link>
-                        </div>
-                        <div className="mid-nav">
-                            <Navbar.Brand href="#home">
-                                <img className="zillow-logo" src="./zillow.png" alt="zillow-logo" />
-                            </Navbar.Brand>
-                        </div>
-                        <div className="right-nav">
-                            <Nav.Link href="#manageRentals">Manage Rentals</Nav.Link>
-                            <Nav.Link href="#advertise">Advertise</Nav.Link>
-                            <Nav.Link href="#help">Help</Nav.Link>
-                            <Nav.Link href="#signIn">Sign In</Nav.Link>
-                        </div>
-                    </Nav>
-                </Container>
-            </Navbar>
+        <Navbar bg="light" expand="lg">
+        <Container>
+            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#link">Link</Nav.Link>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </NavDropdown>
+            </Nav>
+            </Navbar.Collapse>
+        </Container>
+        </Navbar>
         </>
     );
 };
