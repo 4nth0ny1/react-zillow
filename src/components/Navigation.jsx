@@ -15,20 +15,29 @@ function Navigation() {
                             <Nav.Link href="#buy">
                                 <NavDropdown className="nav-dropdown" title="Buy" id="collasible-nav-dropdown">
                                     <div className="dropdown-section">
-                                        {/* <NavDropdown.Item href="#buy">Buy</NavDropdown.Item> */}
-                                        <NavDropdown.Item href="#action/3.1">Homes for sale</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Foreclosures</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">For sale by owner</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.4">Open houses</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.1">New Construction</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Coming Soon</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Recent home sales</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.4">All homes</NavDropdown.Item>
+                                        <Navbar.Text className="dropdown-text">Homes for sale</Navbar.Text>
+                                        <div className="inner-section-container">
+                                            <div className="inner-section">
+                                                <NavDropdown.Item href="#action/3.1">Homes for sale</NavDropdown.Item>
+                                                <NavDropdown.Item href="#action/3.2">Foreclosures</NavDropdown.Item>
+                                                <NavDropdown.Item href="#action/3.3">For sale by owner</NavDropdown.Item>
+                                                <NavDropdown.Item href="#action/3.4">Open houses</NavDropdown.Item>
+                                            </div>
+                                            <div className="inner-section">
+                                                <NavDropdown.Item href="#action/3.1">New Construction</NavDropdown.Item>
+                                                <NavDropdown.Item href="#action/3.2">Coming Soon</NavDropdown.Item>
+                                                <NavDropdown.Item href="#action/3.3">Recent home sales</NavDropdown.Item>
+                                                <NavDropdown.Item href="#action/3.4">All homes</NavDropdown.Item>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="dropdown-section">
+                                        <Navbar.Text className="dropdown-text">Bundle buying and selling</Navbar.Text>
                                         <NavDropdown.Item href="#action/3.1">Buy and sell with Zillow 360</NavDropdown.Item>
                                     </div>
                                     <div className="dropdown-section">
+                                        <Navbar.Text className="dropdown-text">Resources</Navbar.Text>
+
                                         <NavDropdown.Item href="#action/3.1">Buyer's Guide</NavDropdown.Item>
                                         <NavDropdown.Item href="#action/3.2">Foreclosure Center</NavDropdown.Item>
                                         <NavDropdown.Item href="#action/3.3">Real estate app</NavDropdown.Item>
