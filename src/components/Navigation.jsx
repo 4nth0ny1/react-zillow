@@ -9,8 +9,7 @@ function Navigation() {
     return(
         <>
         <Navbar bg="light" expand="lg">
-        <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Container fluid>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -23,6 +22,9 @@ function Navigation() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                 </NavDropdown>
+                <Navbar.Brand href="#home">
+                    <img src="./zillow.png" alt="zillow.png"></img>
+                </Navbar.Brand>
             </Nav>
             </Navbar.Collapse>
         </Container>
